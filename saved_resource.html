@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://fiddle.jshell.net/aybalasubramanian/4reojk8v/show/light/ -->
+<html><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Google Chart Pie Chart - jsFiddle demo by aybalasubramanian</title>
+  
+  <script type="text/javascript" src="jquery-1.8.3.js"></script><style type="text/css"></style>
+  
+  <link rel="stylesheet" type="text/css" href="normalize(1).css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+    
+      <script type="text/javascript" src="jsapi"></script>
+    
+  
+  <style type="text/css">
+    
+  </style>
+  
+
+
+<script type="text/javascript">//<![CDATA[ 
+
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+
+//]]>  
+
+</script><script src="saved_resource" type="text/javascript"></script><link href="ui+en.css" type="text/css" rel="stylesheet"><script src="format+en,default+en,ui+en,corechart+en.I.js" type="text/javascript"></script>
+
+
+<link href="tooltip.css" rel="stylesheet" type="text/css"></head>
+<body>
+  <div id="chart_div" style="width: 900px; height: 500px; position: relative;"><div dir="ltr" style="position: relative; width: 900px; height: 500px;"><div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="900" height="500" aria-label="A chart." aria-hidden="true" style="overflow: hidden;"><defs id="defs"></defs><rect x="0" y="0" width="900" height="500" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><text text-anchor="start" x="161" y="70.9" font-family="Arial" font-size="14" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">My Daily Activities</text></g><g><rect x="542" y="96" width="198" height="106" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><rect x="542" y="96" width="198" height="14" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="561" y="107.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">Work</text></g><rect x="542" y="96" width="14" height="14" stroke="none" stroke-width="0" fill="#3366cc"></rect></g><g><rect x="542" y="119" width="198" height="14" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="561" y="130.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">Eat</text></g><rect x="542" y="119" width="14" height="14" stroke="none" stroke-width="0" fill="#dc3912"></rect></g><g><rect x="542" y="142" width="198" height="14" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="561" y="153.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">Commute</text></g><rect x="542" y="142" width="14" height="14" stroke="none" stroke-width="0" fill="#ff9900"></rect></g><g><rect x="542" y="165" width="198" height="14" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="561" y="176.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">Watch TV</text></g><rect x="542" y="165" width="14" height="14" stroke="none" stroke-width="0" fill="#109618"></rect></g><g><rect x="542" y="188" width="198" height="14" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g><text text-anchor="start" x="561" y="199.9" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#222222">Sleep</text></g><rect x="542" y="188" width="14" height="14" stroke="none" stroke-width="0" fill="#990099"></rect></g></g><g><path d="M340,251L340,97A154,154,0,0,1,379.8581329457882,399.75257724851656L340,251A0,0,0,0,0,340,251" stroke="#ffffff" stroke-width="1" fill="#3366cc"></path><text text-anchor="start" x="438.1707648577682" y="240.34252366466197" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#ffffff">45.8%</text></g><g><path d="M340,251L191.2474227514835,290.8581329457882A154,154,0,0,1,340,97L340,251A0,0,0,0,0,340,251" stroke="#ffffff" stroke-width="1" fill="#990099"></path><text text-anchor="start" x="225.02377088259124" y="183.02217618173913" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#ffffff">29.2%</text></g><g><path d="M340,251L231.1055556972717,359.89444430272835A154,154,0,0,1,191.2474227514835,290.8581329457882L340,251A0,0,0,0,0,340,251" stroke="#ffffff" stroke-width="1" fill="#109618"></path><text text-anchor="start" x="217.79914743775038" y="317.21509081498266" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#ffffff">8.3%</text></g><g><path d="M340,251L300.1418670542118,399.75257724851656A154,154,0,0,1,231.1055556972717,359.89444430272835L340,251A0,0,0,0,0,340,251" stroke="#ffffff" stroke-width="1" fill="#ff9900"></path><text text-anchor="start" x="261.2228787133989" y="364.63316362130666" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#ffffff">8.3%</text></g><g><path d="M340,251L379.8581329457882,399.75257724851656A154,154,0,0,1,300.1418670542118,399.75257724851656L340,251A0,0,0,0,0,340,251" stroke="#ffffff" stroke-width="1" fill="#dc3912"></path><text text-anchor="start" x="324" y="387.9827092057096" font-family="Arial" font-size="14" stroke="none" stroke-width="0" fill="#ffffff">8.3%</text></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><tbody><tr><th>Task</th><th>Hours per Day</th></tr>
+<tr><td>Work</td><td>11</td></tr>
+<tr><td>Eat</td><td>2</td></tr>
+<tr><td>Commute</td><td>2</td></tr>
+<tr><td>Watch TV</td><td>2</td></tr>
+<tr><td>Sleep</td><td>7</td></tr>
+</tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 510px; left: 910px; white-space: nowrap; font-family: Arial; font-size: 14px;">Sleep</div><div></div></div>
+
+  
+
+
+
+
+
+</body></html>
